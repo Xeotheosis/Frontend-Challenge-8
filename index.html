@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <picture>
+        <source
+          media="(max-width:950px)"
+          srcset="./assets/images/illustration-sign-up-mobile.svg"
+        />
+        <source
+          media="(min-width:951px)"
+          srcset="./assets/images/illustration-sign-up-desktop.svg"
+        />
+        <img
+          src="./assets/images/illustration-sign-up-mobile.svg"
+          alt="Mobile Illustration"
+        />
+      </picture>
+
+      <div id="card-container">
+        <div id="card-message">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updated on:</p>
+          <ul>
+            <li>
+              <img
+                class="checkmark"
+                src="./assets/images/icon-list.svg"
+                alt="checkmark"
+              />Product discovery and building what matters
+            </li>
+            <li>
+              <img
+                class="checkmark"
+                src="./assets/images/icon-list.svg"
+                alt="checkmark"
+              />Measuring to ensure updates are a success
+            </li>
+            <li>
+              <img
+                class="checkmark"
+                src="./assets/images/icon-list.svg"
+                alt="checkmark"
+              />And much more!
+            </li>
+          </ul>
+        </div>
+        <div id="card-input">
+          <div>
+            <p id="paragraph-email">Email address</p>
+            <p id="paragraph-error">Valid email required</p>
+          </div>
+          <input type="email" placeholder="email@company.com" />
+          <button id="submit">Subscribe to monthly newsletter</button>
+        </div>
+      </div>
+    </main>
+    <div id="card-success">
+      <div>
+        <img src="./assets/images/icon-success.svg" />
+        <h2>Thanks for subscribing!</h2>
+        <p>
+          A confirmation email has been sent to <span>email</span>. Please open
+          it and click the button inside to confirm your subscription.
+        </p>
+      </div>
+      <button id="dismiss">Dismiss message</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
